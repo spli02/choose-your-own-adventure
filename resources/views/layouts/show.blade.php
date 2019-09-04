@@ -4,10 +4,10 @@
 
     <div class="chapterArea" style="padding:2rem 5rem">
         @if($chapter->is_end=='1')
-            <h3 style="margin-bottom:1rem">The End</h3>
+            <h3 style="margin-bottom:1rem">Game Over</h3>
             <p>
                 <button type="button" class="btn btn-sm" style="border:1px solid #DBB29F; background-color:transparent;">
-                    <a href="/" style="text-decoration: none; color:black;">
+                    <a href="../home" style="text-decoration: none; color:black;">
                         Back to top
                     </a>
                 </button>

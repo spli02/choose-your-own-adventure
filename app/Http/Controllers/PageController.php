@@ -24,11 +24,11 @@ class PageController extends Controller
             return redirect($url);
 
         } else {
-            $chapter = DB::table('chapter')->where('id',$id)->first(); 
-            $choices = DB::table('choice')->where('chapter_id',$id)->get(); 
-            $illustration = DB::table('illustration')->where('chapter_id',$id)->first(); 
-    
-            return view('index',compact('chapter','choices','illustration'));
+            $chapter = DB::table('chapter')->where('id',$id)->first();
+            $choices = DB::table('choice')->where('chapter_id',$id)->get();
+            $illustration = DB::table('illustration')->where('chapter_id',$id)->first();
+
+            return view('layouts/show',compact('chapter','choices','illustration'));
         }
     }
 
@@ -61,12 +61,12 @@ class PageController extends Controller
      */
     public function show($id)
     {
-        $chapter = DB::table('chapter')->where('id',$id)->first(); 
-        $choices = DB::table('choice')->where('chapter_id',$id)->orderBy('order')->get(); 
-        $illustration = DB::table('illustration')->where('chapter_id',$id)->first(); 
+        $chapter = DB::table('chapter')->where('id',$id)->first();
+        $choices = DB::table('choice')->where('chapter_id',$id)->orderBy('order')->get();
+        $illustration = DB::table('illustration')->where('chapter_id',$id)->first();
         session(['id' => $id]);
 
-        return view('show',compact('chapter','choices','illustration'));
+        return view('layouts/show',compact('chapter','choices','illustration'));
     }
 
     /**
