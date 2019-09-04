@@ -1,31 +1,25 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+    <div class="container" style="font-size:1.2rem;">
+        <div class="row justify-content-center">
+            <div class="col-md-4" style="margin:10rem 0;">
+                <div class="card" style="border:gray 1px solid; letter-spacing: .1rem;">
+                    <div class="card-header" style="background-color:#DBB29F; text-align:center; font-weight: bold;">
+                        Welcome back, <span style="color:#BB4A2B;">{{ Auth::user()->name }}</span> !
+                    </div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                    <br><br>
-                    <h2>Let's play "Choose your own adventure"!</h2>
-                    <br><br>
-                    <h3>
-                    <a href="show/1">1. Start a new game</a>
-                    <br><br>
-                    <a href="index">2. Load the saved game</a>
-                    </h3>
+                    <div class="card-body">
+                        @if (session('status'))
+                            <div class="alert alert-success" role="alert">
+                                {{ session('status') }}
+                            </div>
+                        @endif
+                        <p><a href="show/1" style="text-decoration: none; color:black;">1. Start New Game</a></p>
+                        <p><a href="index" style="text-decoration: none; color:black;">2. Continue Saved Game</a></p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 @endsection
