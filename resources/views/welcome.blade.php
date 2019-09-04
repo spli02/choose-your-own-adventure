@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Choose Your Own Adventure</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -12,44 +12,35 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background-color: #FFF3E5;
+                color: #BB4A2B;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
             }
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
+            .welcome {
                 align-items: center;
                 display: flex;
                 justify-content: center;
-            }
-
-            .position-ref {
                 position: relative;
+                height: 100vh;
             }
 
-            .top-right {
+            .welcome__menu {
                 position: absolute;
                 right: 10px;
                 top: 18px;
             }
 
-            .content {
+            .welcome__content {
                 text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
+                font-size: 50px;
             }
 
             .links > a {
-                color: #636b6f;
+                color: #BB4A2B;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -58,15 +49,12 @@
                 text-transform: uppercase;
             }
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="welcome">
             @if (Route::has('login'))
-                <div class="top-right links">
+                <div class="welcome__menu links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
@@ -79,20 +67,8 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+            <div class="welcome__content">
+                Choose Your Own Adventure
             </div>
         </div>
     </body>

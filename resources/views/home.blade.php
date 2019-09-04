@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container" style="font-size:1.2rem;">
+    <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-4" style="margin:10rem 0;">
+            <div class="col-md-5" style="margin:10rem 0;">
                 <div class="card" style="border:gray 1px solid; letter-spacing: .1rem;">
-                    <div class="card-header" style="background-color:#DBB29F; text-align:center; font-weight: bold;">
+                    <div class="card-header" style="background-color:#DBB29F; text-align:center; font-weight: bold; font-size:1.1rem;">
                         Welcome back, <span style="color:#BB4A2B;">{{ Auth::user()->name }}</span> !
                     </div>
 
