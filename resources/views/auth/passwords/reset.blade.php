@@ -3,11 +3,11 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-8" style="margin-top:8rem;">
             <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+                <div class="card-header" style="border:gray 1px solid; border-bottom:none; background-color: #DBB29F; letter-spacing: .1rem;">{{ __('Reset Password') }}</div>
 
-                <div class="card-body">
+                <div class="card-body" style="border:gray 1px solid;">
                     <form method="POST" action="{{ route('password.update') }}">
                         @csrf
 
