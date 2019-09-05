@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: #BB4A2B;">
+        <nav class="navbar navbar-expand-md shadow-sm" style="background-color: #DBB29F;">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}" style="color: white; letter-spacing: .2rem;">
                     {{ config('Choose Your Own Adventure', 'Choose Your Own Adventure') }}

@@ -24,9 +24,9 @@
 
             @foreach($choices as $choice)
                 <p>
-                    <button type="button" class="btn btn-sm" style="background-color:#BB4A2B;">
-                        <a href="{{ $choice->goto_id }}" style="text-decoration: none; color:white;">
-                                {{ $choice->text }}
+                    <button type="button" class="btn btn-sm" style="background-color:#DBB29F;">
+                        <a href="{{ $choice->goto_id }}" style="text-decoration: none; color:black;">
+                            {{ $choice->text }}
                         </a>
                     </button>
                 </p>

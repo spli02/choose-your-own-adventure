@@ -13,9 +13,9 @@
         <style>
             html, body {
                 background-color: #FFF3E5;
-                color: #BB4A2B;
+                color: black;
                 font-family: 'Nunito', sans-serif;
-                font-weight: 200;
+                font-weight: 900;
                 height: 100vh;
                 margin: 0;
             }
@@ -36,11 +36,21 @@
 
             .welcome__content {
                 text-align: center;
-                font-size: 50px;
+            }
+            .welcome__content p{
+                text-align: center;
+                font-size: 30px;
+                letter-spacing: .1rem;
+                border-bottom: 5px solid #F0BC5D;
+            }
+            .welcome__content img{
+                width: 200px;
+                height: auto;
+                margin: 4rem;
             }
 
             .links > a {
-                color: #BB4A2B;
+                color: #DBB29F;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -68,7 +78,8 @@
             @endif
 
             <div class="welcome__content">
-                Choose Your Own Adventure
+                <p>Choose Your Own Adventure</p>
+                <img src="{{asset('img/book.svg')}}" alt="book">
             </div>
         </div>
     </body>
